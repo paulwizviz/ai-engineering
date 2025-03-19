@@ -1,6 +1,6 @@
 # Artificial Intelligence:  Working Examples and References
 
-This repository contains posts and references to working examples and references to learning materials related to Artificial Intelligence (AI).
+This repository references to working examples and learning materials related to Artificial Intelligence (AI).
 
 The artefaces were drawn from these [CONTRIBUTOR](./CONTRIBUTORS).
 
