@@ -126,7 +126,7 @@ Moreover, if the future of AI-driven development leans toward a prompt-oriented 
 
 ## Conclusion
 
-Predicting the long-term impact of AI is as uncertain as my previous attempt to forecast a world dominated by Web3 (blockchain-based technology). The Web3 promise of efficiency through smart contracts replacing traditional architecture did not enjoy widespread adoption. It remains confined to cryptocurrency rather than achieving widespread enterprise adoption. A principal reason is a clear return on investment in the cryptocurrency domain, whereas the deployment of Web3 could not justify investment in the technology. It also met with resistance from traditional software engineering practitioners.
+Predicting the long-term impact of AI is as uncertain as my previous attempt to forecast a world dominated by Web3 (blockchain-based technology). The Web3 promise of efficiency through smart contracts replacing traditional architecture did not enjoy widespread adoption. It remains confined to cryptocurrency rather than achieving widespread enterprise adoption. A principal reason is a clear return on investment in the cryptocurrency domain, whereas the deployment of Web3 in other domains could not justify investment in the technology. Web3 also met with resistance from traditional software engineering practitioners. In areas where Web3 is deployed in the face of resistance, you often find some strange hybrid solution that offers little value - i.e. using blockchain as a database - and a hybrid that does not serve as a pathway for optimal adoption of Web3. Thus resulting in unjustified disappointment in the technology.
 
 Like Web3, AI adoption may depend on economic incentives and resistance to change. For AI, where is the equivalent of cryptocurrency financial appeal?
 
@@ -138,5 +138,8 @@ If we focus on AI disrupting the software engineering profession, will AI-genera
 
 Will future digital systems be entirely prompt-oriented? 
 
-Given that traditional banking still relies on COBOL, resistance to change suggests Web2 systems will likely coexist with prompt-driven architectures. What this hybrid landscape will look like is uncertain. However, for software engineers, embracing a prompt-based mindset is no longer optional but essential. Focusing on the deficiencies of AI-generated code solutions and extrapolating from that to dismiss the impact of AI on the software engineering profession may be foolish.
+Given that traditional banking still relies on COBOL, resistance to change suggests Web2 systems will likely coexist with prompt-driven architectures. What this hybrid landscape will look like is uncertain; it could end up with a solution that is not optimal and only creates more problems- e.g. AI-generated code storing up technical debt that could not be undone.
+
+For software engineers, there is no avoiding AI. A likely AI future will be prompt-oriented. Engineers should embrace a prompt-based mindset as it's no longer optional but essential. Focusing on the deficiencies of AI-generated code solutions and extrapolating from that to dismiss the impact of AI on the software engineering profession may be foolish.
+
 
