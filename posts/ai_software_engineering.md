@@ -67,10 +67,6 @@ The internal architecture of a prompt-based system is summarised in Figures 2 an
 
 In Figure 2, the LLM generates code (i.e., HTML) to enable prompt interfaces to render presentations directly. This approach of LLM-driven UI rendering is known as a **malleable application**. It grants Alice and Bob greater flexibility and control through prompts. Rather than navigating a rigid interface, they interact with a dynamic system that adapts to their needs. For example, the LLM could learn from Bob's trading pattern and adjust its advice dynamically without complex re-engineering. Furthermore, the prompt curator can enhance user prompts, ensuring that the LLM delivers accurate and contextually relevant responses.
 
-## Malleable Application Architectures: AI’s Potential Shift
-
-This case study highlights how AI introduces the concept of a **malleable application architecture**, where applications are no longer static constructs but adaptable systems capable of evolving based on user interactions. In this paradigm, the LLM provides business logic services typically found in Web2. The prompt curator serves as the equivalent of an API in Web2, but unlike Web2’s rigid API calls. User interactions are conducted through natural language prompts. The software engineers could still have a role in designing and implementing these curated prompts and its interaction with other systems like cryptographic wallet or databases. However, traditional engineering principles don't apply when implementing LLMs and this is an aspect software engineering practices is expected to change.
-
 ### Key takeaway
 
 Here are my key takeways when contrasting web2 and prompt-base archtiecture.
@@ -97,26 +93,23 @@ Malleable applications generate UI elements for end users rather than software e
 
 ### The Limitations of AI-Generated Code
 
-It is worth noting that programming languages were created principally to be human-readable. Many of these languages require compilation for execution on computational platforms, and others, such as HTML and Javascript, can be interpreted by platforms directly. These languages must also be tuned to ensure that executables are optimised for the target platform. This requires a skilled software engineer to write codes accordingly. Does AI have the necessary cognitive skills to perform such tasks?
+It is worth noting that programming languages were created principally to be human-readable. Many of these languages require compilation for execution on computational platforms, and others, such as HTML and Javascript, can be interpreted by platforms directly. These languages must also be tuned to ensure that executables are optimised for the target platform. This requires a skilled software engineer to write codes accordingly. According to many software engineers, the principal criticisms of AI-generated code are:
 
-Many programming languages have been created. My estimate is about 100, if not more. Figure 4 summarises the range of programming languages and their fit in the Web2 architecture. Expecting AI to cover all these languages could be a tall order. How well each language is supported depends on the level of investment by the AI tools provider.
+Generated codes do not follow proper engineering practices developed over the years.
+The lack of a deliberate and considerate approach to producing code accumulates technical debt, making generated codes unreadable by humans.
+
+Conversely, proponents of such tools argue that they help software engineers achieve productivity and thus outweigh the downside of occasional problems. In any case, as AI progresses, such tools will inevitably improve.
+
+Many programming languages have been created. My estimate is about 100, if not more. Figure 4 summarises the range of programming languages and their fit in the Web2 architecture. Expecting AI to cover all these languages could be a tall order. How well each language is supported depends on the level of investment by the AI tools provider. What if enterprises that rely on AI-generated code for a given language found that the AI tool it depends on no longer wishes to invest in training the tool for that language? What if the skill to manage the codebase has also atrophied or accumulated technical debt, complicating refactoring? 
 
 <figure>
 <img src="../assets/img/programming-languages.png" alt="list-crypto" style="width:70%;height:100%">
 <figcaption>Figure 4: Programming Languages</figcaption>
 </figure>
 
-According to many software engineers, the principal criticisms of AI-generated code are:
-
-* Generated codes do not follow proper engineering practices developed over the years.
-
-* The lack of a deliberate and considerate approach to producing code accumulates technical debt, making generated codes unreadable by humans.
-
-Conversely, proponents of such tools argue that they help software engineers achieve productivity and thus outweigh the downside of occasional problems. In any case, as AI progresses, such tools will inevitably improve.
-
 ### A Fad or a Fundamental Shift?
 
-Since programming languages are primarily designed for human readability, the sheer variety of languages and the potential rise of malleable applications raise a fundamental question:  Is using AI to generate human-readable code an optimal use of AI? Does AI-generated code represent a fundamental shift in the AI landscape?
+Since programming languages are primarily designed for human readability, the sheer variety of languages and the potential rise of malleable applications raise a fundamental question: Is using AI to generate human-readable code an optimal use of AI? Does AI-generated code represent a fundamental shift in the AI landscape?
 
 Some may argue that software engineers must scrutinise code before deployment to ensure reliability and security, necessitating human involvement. If AI allows engineers to focus on higher-level problem-solving—such as translating business requirements into AI prompts—this could be a more productive shift than having engineers manually write code. But this raises another question: Do we still need to support many programming languages?
 
@@ -142,4 +135,4 @@ Given that traditional banking still relies on COBOL, resistance to change sugge
 
 For software engineers, there is no avoiding AI. A likely AI future will be prompt-oriented. Engineers should embrace a prompt-based mindset as it's no longer optional but essential. Focusing on the deficiencies of AI-generated code solutions and extrapolating from that to dismiss the impact of AI on the software engineering profession may be foolish.
 
-
+NOTE: Refer to my [GitHub examples](https://github.com/paulwizviz/llm-api-examples) for clues for creating a prompt curator.
