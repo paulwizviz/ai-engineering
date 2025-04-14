@@ -4,7 +4,14 @@ This repository references to working examples and learning materials related to
 
 The artefaces were drawn from these [CONTRIBUTOR](./CONTRIBUTORS).
 
-## Posts
+## Notes
+
+A collection of notes on all things AI.
+
+* [AI Agent](./notes/agent.md)
+* [Prompts](./notes/prompt.md)
+
+## Blog Posts
 
 * [Is ArtificaI Intelligence (AI) Disrupting Software Engineering?](./posts/ai_software_engineering.md)
 
