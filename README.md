@@ -9,6 +9,7 @@ The artefaces were drawn from these [CONTRIBUTOR](./CONTRIBUTORS).
 A collection of notes on all things AI.
 
 * [AI Agent](./notes/agent.md)
+* [Llama](./notes/llama.md)
 * [Prompts](./notes/prompt.md)
 
 ## Blog Posts
