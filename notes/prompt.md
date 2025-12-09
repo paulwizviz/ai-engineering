@@ -1,6 +1,6 @@
 # Our Thoughts on Prompts
 
-We've been spending a lot of time thinking about prompts. It seems to be one of the most important pieces of the puzzle when working with Large Language Models (LLMs). We've come to think of a prompt as simply the instruction we give to a model to get it to do something for us.
+Prompt seems to be one of the most important pieces of the puzzle when working with Large Language Models (LLMs). We've come to think of a prompt as simply the instruction we give to a model to get it to do something for us.
 
 It can be as simple as:
 
@@ -11,7 +11,7 @@ It can be as simple as:
 
 ## The Different Kinds of Prompts We've Used
 
-We've found that prompts come in a few different flavours, depending on what we're trying to achieve. Here are the main types we've been experimenting with:
+We learnt that prompts come in a few different flavours, depending on what we're trying to achieve. Here are the main types we've been experimenting with:
 
 * **Zero-shot:** This is when we just ask the model to do something without giving it any examples.
 * **Few-shot:** Here, we give the model a few examples of what we want, right in the prompt, to help guide it.

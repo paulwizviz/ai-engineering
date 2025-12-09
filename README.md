@@ -8,9 +8,10 @@ Here, we're documenting the things we've learned, the examples we've built, and 
 
 This is where we jot down our thoughts and learnings on various AI topics. It's a bit like our shared scrapbook.
 
-* [Our thinking on AI Agents](./notes/agent.md)
+* [Prompting](./notes/prompt.md)
 * [Getting a Local LLM Running](./notes/local-llm.md)
-* [Crafting Effective Prompts](./notes/prompt.md)
+* [Language Model](./notes/llm.md)
+* [Our thinking on AI Agents](./notes/agent.md)
 
 ## Blog Posts
 
@@ -30,6 +31,7 @@ A list of external resources that we found particularly helpful or thought-provo
 
 * [What are AI Agents Really About?](https://www.youtube.com/watch?v=eHEHE2fpnWQ)
 * [AI vs ML vs DL vs DS - An Explanation](https://www.youtube.com/watch?v=hhFG9X3h8t8)
+* **AI Engineering: Building Applications with Foundation Models**. Huyen, Chip.
 
 ## Disclaimer
 

@@ -21,7 +21,7 @@ We've learned that not all agents are created equal. They seem to fall into a fe
 
 ## How We Can Build Agents: SDKs
 
-We quickly realised that building an agent from scratch is a huge task. Luckily, there are some great Software Development Kits (SDKs) out there that give us a head start.
+We quickly realised that building an agent from scratch is a huge task. There are Software Development Kits (SDKs) out there that give us a head start.
 
 We see these SDKs as more than just a simple wrapper around an LLM. They help us build the entire agent, including its memory, its ability to use tools, and its reasoning loop.
 
