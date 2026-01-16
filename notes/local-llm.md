@@ -27,7 +27,7 @@ After working with Llama.cpp, we tried Ollama and it felt like a breath of fresh
 * **Getting Started:** This was significantly easier than using Llama.cpp directly. Ollama handles all the model downloading and management for you. We could also create "Modelfiles", which are like Dockerfiles, to package up our own custom model configurations.
 * **Who we think it's for:** We reckon Ollama is the perfect middle ground. It's for anyone who wants an easy way to run LLMs locally and get an API to work with, but without the deep technical overhead of Llama.cpp.
 
-For more on how we've been using Ollama, we've started a separate guide [here](./ollama.md).
+For more on how we've been using Ollama, we've started a [separate guide](./ollama.md).
 
 ## LM Studio
 
@@ -39,6 +39,8 @@ Then we tried LM Studio, which feels like a different category altogether.
 * **Flexibility:** The trade-off for that ease of use is a bit less control compared to the other two. You can tweak settings in the GUI, but it's not designed for deep customisation.
 * **A Note on Source:** One thing we noted is that while it uses open-source libraries, the main GUI application itself is closed-source.
 * **Who we think it's for:** We'd recommend LM Studio to beginners or anyone who just wants a simple, visual way to play with local LLMs without any fuss.
+
+Here is our analysis of [lm-studio](./lm-studio.md).
 
 ## Our Summary
 

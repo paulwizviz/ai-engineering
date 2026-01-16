@@ -9,9 +9,9 @@ Here, we're documenting the things we've learned, the examples we've built, and 
 This is where we jot down our thoughts and learnings on various AI topics. It's a bit like our shared scrapbook.
 
 * [Prompting](./notes/prompt.md)
-* [Getting a Local LLM Running](./notes/local-llm.md)
 * [Language Model](./notes/llm.md)
-* [Our thinking on AI Agents](./notes/agent.md)
+  * [Running LLM Locally](./notes/local-llm.md)
+* [AI Agents](./notes/agent.md)
 
 ## Blog Posts
 

@@ -10,7 +10,7 @@ We also learnt that a language model is one type of AI model and that it is opti
 | Capabilities | General-purpose reasoning + language | Usually single-task |
 | Training data | Huge text corpora | Task-specific datasets |
 | Flexibility | Very flexible | Limited, highly specialised |
-| Examples | ChatGPT, Claude |Image classifiers, speech recognizers, recommender systems, Machine Learning (Linear regression, etc) |
+| Examples | ChatGPT, Claude | Image classifiers, speech recognizers, recommender systems, Machine Learning (Linear regression, etc) |
 
 ## Token
 
