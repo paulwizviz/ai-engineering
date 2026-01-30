@@ -11,6 +11,7 @@ This is where we jot down our thoughts and learnings on various AI topics. It's 
 * [Prompting](./notes/prompt.md)
 * [Language Model](./notes/llm.md)
   * [Running LLM Locally](./notes/local-llm.md)
+* [Model Context Protocol](./notes/mcp.md)
 * [AI Agents](./notes/agent.md)
 
 ## Blog Posts
