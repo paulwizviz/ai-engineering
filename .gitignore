@@ -4,3 +4,5 @@
 deployments/n8n/n8n-data
 
 .env
+.envrc
+deployments/n8n-data

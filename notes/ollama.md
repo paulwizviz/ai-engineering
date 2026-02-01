@@ -4,7 +4,7 @@ Ollama is a tool written in Go that simplifies running and managing large langua
 
 This guide covers the basic steps for installing Ollama, managing models, and interacting with them.
 
-## 1. Installation and Setup (macOS)
+## Installation and Setup (macOS)
 
 There are two common methods for installing Ollama on macOS.
 
@@ -27,7 +27,7 @@ You can also install the application by downloading it directly.
 1. Navigate to the [Ollama website](https://ollama.ai/) and download the macOS application.
 2. This will install both the command-line tools and a macOS menu bar application for managing the service.
 
-## 2. Managing Models
+## Managing Models
 
 Ollama handles the storage and organisation of your models. On macOS and Linux, models are kept in the `~/.ollama/models` directory.
 
@@ -61,7 +61,7 @@ Use the following commands in your terminal to manage your local models.
 
   *Example: `ollama rm llama2:latest`*
 
-## 3. Interacting with a Model
+## Interacting with a Model
 
 Ollama provides two primary ways to interact with an LLM.
 
@@ -79,7 +79,7 @@ This mode allows for a back-and-forth conversation, where the model remembers th
 * **Command:** `ollama run <model_name>` (without a prompt) or `ollama chat <model_name>`
 * **Use Case:** Ideal for chatbot-style interactions or more complex queries that require conversational context.
 
-## 4. Customising Models with a `Modelfile`
+## Customising Models with a `Modelfile`
 
 A `Modelfile` is a powerful configuration file that allows you to customise how Ollama runs a model. You can use it to set a specific persona, adjust generation parameters, and more.
 
@@ -121,3 +121,10 @@ STEP 2: `ollama create <choose-a-model-name> -f <location of the file e.g. ./Mod
 STEP 3: `ollama run <choose-a-model-name>`
 
 STEP 4: Start using the model!
+
+## Working Examples
+
+The following examples demonstrates interaction with ollama via curl.
+
+* [Example 1](../examples/ollama/ex1.sh) - This calls ollama expecting no streaming response.
+* [Example 2](../examples/ollama/ex2.sh) - This calls ollama expecting streaming response.
