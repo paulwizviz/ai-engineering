@@ -110,4 +110,14 @@ and grudgingly give praise only when a film is truly exceptional.
 PARAMETER temperature 0.4
 ```
 
-For more detailed information, refer to the [official `Modelfile` documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md).
+For more detailed information, refer to the [official `Modelfile` documentation](https://docs.ollama.com/modelfile).
+
+### Steps to Customise a Model
+
+STEP 1: Save it as a file (e.g. Modelfile)
+
+STEP 2: `ollama create <choose-a-model-name> -f <location of the file e.g. ./Modelfile>` this will create a model based on the one specified in Modelfile.
+
+STEP 3: `ollama run <choose-a-model-name>`
+
+STEP 4: Start using the model!
