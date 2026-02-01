@@ -1,56 +1,47 @@
-# Our Thoughts on AI Agents
+# AI Agents
 
-The idea of "AI Agents" is something we've found ourselves coming back to again and again. It seems to be a key concept in building more advanced AI applications. After a lot of reading and discussion, we've started to think of an AI agent as a system that can act on its own to get things done.
+An AI agent is a software program that operates autonomously to achieve specific goals by perceiving its environment, reasoning through steps, and taking action using external tools
 
-It's called an "agent" because it acts on our behalf, with a certain degree of autonomy. We've boiled its key characteristics down to these four things:
+## Key Characteristics and Capabilities
 
-1. **Perception:** It has to be able to sense its environment, whether that's through APIs, input data, or something else.
-2. **Reasoning:** It needs to process that information and make a decision.
-3. **Action:** It has to be able to do something that affects its environment, like calling an API or answering a question.
-4. **Autonomy:** This is the big one. It has to be able to operate without a human holding its hand at every step.
+* **Autonomy:** Agents can operate independently to complete multi-step workflows after being given a goal.
+* **Tool Use:** They can interact with external software, APIs, and databases to perform tasks, such as updating a CRM or booking a flight.
+* **Reasoning & Planning:** Agents break complex tasks into smaller, manageable actions.
+* **Memory & Learning:** They remember past interactions to improve future decisions and adapt over time.
+
+## Components of an AI Agent
+
+* **Integration with LLMs:** They often use Large Language Models (LLMs) to understand intent and make decisions, but add the "action" layer that LLMs lack.
+* **Perception:** Gathering data from user prompts or external environments.
+* **Memory:** Storing context and previous action results.
+* **Action/Tools:** Using software capabilities to execute tasks.
 
 ## The Different Kinds of Agents
-
-We've learned that not all agents are created equal. They seem to fall into a few categories, from the simple to the very complex:
 
 * **Simple reflex agents:** These just react to what's happening right now.
 * **Model-based agents:** These are a bit smarter; they keep an internal "map" of the world to help them decide what to do.
 * **Goal-based agents:** These agents are focused on achieving a specific outcome.
 * **Utility-based agents:** These are more advanced, trying to choose the action that will give them the most "utility" or bring them closest to success.
-* **Learning agents:** These are the most exciting to us. They can actually improve their own performance over time based on experience.
+* **Learning agents:** They can actually improve their own performance over time based on experience.
 
-## How We Can Build Agents: SDKs
+## Implementation Framework and Examples
 
-We quickly realised that building an agent from scratch is a huge task. There are Software Development Kits (SDKs) out there that give us a head start.
+### n8n
 
-We see these SDKs as more than just a simple wrapper around an LLM. They help us build the entire agent, including its memory, its ability to use tools, and its reasoning loop.
+`n8n` is a worflow automation platform for building and running agentic system. How it works:
 
-Here are the key features we've been looking for in an Agent SDK:
+* **Orchestration Layer:** Manages the flow between different AI models and external tools, ensuring steps happen in the right order.
+* **Connects to Everything:** Integrates with hundreds of apps, databases, and APIs, giving agents access to real-world data and actions.
+* **Logic & Control:** Handles conditional logic, retries, and human approvals, making AI less erratic and more reliable.
+* **Visual Development:** Offers a node-based interface (low-code/no-code) to design complex agentic processes without deep programming.
+* **Production Ready:** Provides features like error handling and auditing, crucial for deploying AI agents in business environments.
 
-| Feature | What it means to us |
-| --- | --- |
-| **Prompt Management** | Helps us create and manage good, consistent prompts. |
-| **Memory** | Gives the agent a way to remember things, both short-term and long-term. |
-| **Tool/Plugin Interfaces** | Lets the agent connect to the outside world, like searching the web or reading files. |
-| **Agent Loop Orchestration** | Manages the core "think, decide, act" loop that the agent runs on. |
-| **State Management** | Keeps track of what the agent has done and what it has learned. |
-| **Multi-agent support** | Some frameworks even let us create teams of agents that can work together. |
-| **Execution Environment** | Provides a safe way for the agent to actually perform actions, like running code. |
+There is a local docker based `n8n` deployments under `./deployments` consisting of these:
 
-### Python SDKs We've Looked At
+* **[docker-compose.yaml](../deployments/docker/docker-compose.yaml)**: This file defines our n8n environment. We're using the official `n8nio/n8n` image and have set it up to persist all our workflow data into a local `n8n-data` directory. This is crucial so we don't lose our work when the container restarts. It also sources a number of environment variables from the `ops.sh` script to configure things like the host, port, and basic authentication.
 
-The Python ecosystem is full of these, but here are a few of the main ones we've been exploring:
+* **[ops.sh](../deployments/docker/ops.sh)**: This is a simple shell script we've put together to handle the common operations. It allows us to `start` and `stop` the n8n container. There's also a `clean` command, but a word of caution: **it will permanently delete all your n8n data**, so use it with care! It's really only there for when we need a completely fresh start.
 
-| SDK | Our Quick Take |
-| --- | --- |
-| **LangChain** | The most popular one. It's a huge library for chaining LLM calls and building agents. |
-| **AutoGen** | A framework from Microsoft that's focused on getting multiple agents to collaborate. |
-| **CrewAI** | A newer one we're watching that focuses on role-based agent collaboration. |
-| **Semantic Kernel** | Another one from Microsoft, which lets you define agent "skills". |
-| **Haystack** | A great framework for building pipelines, especially for RAG (Retrieval-Augmented Generation). |
+## References
 
-## Our Working Examples
-
-We're always trying to build things to learn better. Here's an example project where we've been playing with some of these concepts:
-
-* [n8n Workflow Automation](https://github.com/paulwizviz/learn-n8n)
+* [What are AI agents by IBM](https://www.ibm.com/think/topics/ai-agents)
