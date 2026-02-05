@@ -39,3 +39,22 @@ To control the server:
 3. Use the `Stop Server` button to shut the server down.
 
 ![A screenshot showing the server controls within the LM Studio application.](../assets/img/lm-studio-server.png)
+
+## Working Examples
+
+The following are examples demonstrating applications interacting with LM Studio via its [API](https://lmstudio.ai/docs/app/api/endpoints/openai)
+
+### Interacting via Go
+
+* Example 1
+  * Get a list of models.
+  * Using OpenAI compatible endpoint `v1/models`.
+  * [Source](../examples/lm-studio/go/ex1/main.go).
+* Example 2
+  * Prompting LLM to list cryptocurrencies
+  * Using OpenAI compatible endpoint `/v1/completion` with no streaming
+  * [Source](../examples/lm-studio/go/ex2/main.go)
+* Example 3
+  * Prompting LLM to list cryptocurrencies
+  * Using the OpenAPI compatible `/v1/completion` with streaming
+  * [Source](../examples/lm-studio/go/ex3/main.go)

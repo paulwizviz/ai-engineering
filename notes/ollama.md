@@ -124,7 +124,32 @@ STEP 4: Start using the model!
 
 ## Working Examples
 
-The following examples demonstrates interaction with ollama via curl.
+The following examples demonstrates ways of interacting with Ollama via its [API](https://github.com/ollama/ollama/blob/main/docs/api.md)
 
-* [Example 1](../examples/ollama/ex1.sh) - This calls ollama expecting no streaming response.
-* [Example 2](../examples/ollama/ex2.sh) - This calls ollama expecting streaming response.
+### Ollama via curl
+
+* [Example 1](../examples/ollama/curl/ex1.sh) - This calls ollama expecting no streaming response.
+* [Example 2](../examples/ollama/curl/ex2.sh) - This calls ollama expecting streaming response.
+
+### Interacting via Go
+
+* Example 1
+  * Text completion
+  * Based on the official [Ollama API](https://github.com/ollama/ollama) to interact with the server.
+  * Response with no streaming.
+  * [Source](../cmd/ollama/ex1/main.go).
+* Example 2
+  * Same as Example 1 with streaming response.
+  * [Source](../cmd/ollama//ex2/main.go).
+* Example 3
+  * Using custom client.
+  * Request the server to analyse a picture of a [kitten](../testdata/cat.jpeg).
+  * [Source](../cmd/ollama/ex3/main.go).
+* Example 4
+  * Chat scenario where the model is the role of an assistant.
+  * A user sends a greeting by saying Hi and then followed by asking the model to tell him about Italy in one sentence.
+  * [Source](../cmd/ollama/ex4/main.go)
+* Example 5
+  * Text response
+  * Asking for a response in JSON
+  * [Source](../cmd/ollama/ex5/main.go)
