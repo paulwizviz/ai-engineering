@@ -27,6 +27,8 @@ func main() {
 		},
 		Stream: &isTrue,
 	}
+
+	// LLM response
 	if err := client.Chat(context.TODO(), req, func(cr api.ChatResponse) error {
 		fmt.Printf("Role: %v Content: %v\n", cr.Message.Role, cr.Message.Content)
 		return nil
@@ -34,7 +36,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// User reply
+	// User prompt
 	req = &api.ChatRequest{
 		Model: "llama3.1:8b",
 		Messages: []api.Message{
@@ -45,6 +47,8 @@ func main() {
 		},
 		Stream: &isTrue,
 	}
+
+	// LLM response
 	err = client.Chat(context.TODO(), req, func(cr api.ChatResponse) error {
 		fmt.Printf("Role: %v Content: %v\n", cr.Message.Role, cr.Message.Content)
 		return nil

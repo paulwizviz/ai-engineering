@@ -50,6 +50,8 @@ func main() {
 		log.Fatal(err)
 	}
 
+	fmt.Println("---- New Requests ----")
+
 	req = &api.GenerateRequest{
 		Model:  "llama3.1:8b",
 		Prompt: "What is the area of a circle with radis 1m? Respond in JSON",
