@@ -148,8 +148,12 @@ The following examples demonstrates ways of interacting with Ollama via its [API
 * Example 4
   * Chat scenario where the model is the role of an assistant.
   * A user sends a greeting by saying Hi and then followed by asking the model to tell him about Italy in one sentence.
-  * [Source](../cmd/ollama/ex4/main.go)
+  * [Source](../cmd/ollama/ex4/main.go).
 * Example 5
-  * Text response
-  * Asking for a response in JSON
-  * [Source](../cmd/ollama/ex5/main.go)
+  * Text response.
+  * Asking for a response in JSON.
+  * [Source](../cmd/ollama/ex5/main.go).
+* Example 6
+  * Getting LLM to classify the intent of a user prompt.
+  * This example include system prompt to define the role of the LLM.
+  * [source](../examples/ollama/go/ex6/main.go).
