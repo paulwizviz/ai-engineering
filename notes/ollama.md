@@ -155,5 +155,8 @@ The following examples demonstrates ways of interacting with Ollama via its [API
   * [Source](../cmd/ollama/ex5/main.go).
 * Example 6
   * Getting LLM to classify the intent of a user prompt.
-  * This example include system prompt to define the role of the LLM.
+  * This example include system prompt to define the role of the LLM. In this example, the intents are not defined and listed only as labels.
   * [source](../examples/ollama/go/ex6/main.go).
+* Example 7
+  * Similar to Example 6, but the intents are fully defined.
+  * [source](../examples/ollama/go/ex7/main.go).
