@@ -8,6 +8,7 @@ Here, we're documenting the things we've learned, the examples we've built, and 
 
 This is where we jot down our thoughts and learnings on various AI topics. It's a bit like our shared scrapbook.
 
+* [Tokenisation and Embedding](./notes/embed.md)
 * [Prompting](./notes/prompt.md)
 * [Language Model](./notes/llm.md)
   * [Running LLM Locally](./notes/local-llm.md)
