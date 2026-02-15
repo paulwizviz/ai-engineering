@@ -162,6 +162,27 @@ Infinite user inputs → LLM (classifier) → Finite actions → Deterministic e
 
 Example: Flight booking agent uses LLM to understand "I want to fly to Tokyo" but PostgreSQL to search flights and process payments.
 
+## AI Agent vs. Agentic AI
+
+**AI Agent** (noun): A specific software system that uses an LLM to interpret requests, select actions from a predefined set, and execute multi-step workflows.
+
+- Example: Flight booking agent, customer service agent
+- Concrete, deployable application
+
+**Agentic AI** (adjective): A design quality describing systems with agent-like characteristics such as autonomous decision-making, goal-directed behaviour, and adaptive responses.
+
+- Example: "Our system has agentic capabilities"
+- Describes HOW a system works, not WHAT it is
+
+**Key distinction:**
+
+- AI Agent = the thing you build
+- Agentic AI = the quality it has
+
+**Analogy:**
+
+- "Self-driving car" (AI Agent) vs. "autonomous driving capability" (Agentic AI)
+
 ## Implementation Framework and Examples
 
 ### n8n
