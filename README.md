@@ -6,14 +6,15 @@ Here, we're documenting the things we've learned, the examples we've built, and 
 
 ## Our Notes
 
-This is where we jot down our thoughts and learnings on various AI topics. It's a bit like our shared scrapbook.
+This is where we jot down our thoughts and learnings on various AI topics.
 
-* [Tokenisation and Embedding](./notes/embed.md)
-* [Prompting](./notes/prompt.md)
+* [AI Agents](./notes/agent.md)
 * [Language Model](./notes/llm.md)
   * [Running LLM Locally](./notes/local-llm.md)
 * [Model Context Protocol](./notes/mcp.md)
-* [AI Agents](./notes/agent.md)
+* [Neural Network](./notes/neural.md)
+* [Prompting](./notes/prompt.md)
+* [Tokenisation and Embedding](./notes/embed.md)
 
 ## Blog Posts
 
