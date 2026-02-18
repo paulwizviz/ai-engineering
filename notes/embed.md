@@ -79,3 +79,4 @@ So the vector arithmetic naturally captures these analogies.
 ## References
 
 - [Embeddings & Vector Databases Explained](https://www.youtube.com/watch?v=rw1YfQQttfo)
+- [A Beginner's Guide to Vector Embeddings](https://www.youtube.com/watch?v=NEreO2zlXDk)
