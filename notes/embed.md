@@ -35,7 +35,7 @@ Think of it like plotting words in multi-dimensional space where similar meaning
 - "king" and "bicycle" would be far apart
 - The vector for "king" - "man" + "woman" ≈ "queen" (that famous Word2Vec example)
 
-These vectors are learned from data, not hand-crafted. The model discovers that words appearing in similar contexts should have similar embeddings.
+These vectors are learnt from data, not hand-crafted. The model discovers that words appearing in similar contexts should have similar embeddings.
 
 ## Word2Vec
 
@@ -68,7 +68,7 @@ Then when you add woman, you're adding the "femaleness" concept back in.
 
 So you end up with: royalty + female = queen
 
-The embedding space learned these relationships from text. The model noticed patterns like:
+The embedding space learnt these relationships from text. The model noticed patterns like:
 
 - "king" and "man" appear in similar grammatical contexts (he, his, him)
 - "king" and "queen" appear in similar semantic contexts (throne, crown, reign)

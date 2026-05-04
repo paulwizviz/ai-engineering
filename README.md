@@ -2,7 +2,7 @@
 
 Welcome to our collection of findings and experiments in the world of Artificial Intelligence. We're a group of contributors exploring what it means to build applications that leverage AI, and this repository is our shared journal.
 
-Here, we're documenting the things we've learned, the examples we've built, and the interesting resources we've stumbled upon along the way. This journey is a team effort, and you can see everyone involved in our [CONTRIBUTORS](./CONTRIBUTORS) file.
+Here, we're documenting the things we've learnt, the examples we've built, and the interesting resources we've stumbled upon along the way. This journey is a team effort, and you can see everyone involved in our [CONTRIBUTORS](./CONTRIBUTORS) file.
 
 ## Our Notes
 

@@ -75,7 +75,7 @@ Here are my key takeways when contrasting web2 and prompt-base archtiecture.
 | --- | --- | --- |
 | User | Guided interaction | User driven |
 | UI | Fixed layout | Malleable |
-| Middleware | Rules bound | Knowledge driven | 
+| Middleware | Rules bound | Knowledge driven |
 
 ## AI-Generate Code: Coding or Engineering?
 
@@ -100,7 +100,7 @@ The lack of a deliberate and considerate approach to producing code accumulates 
 
 Conversely, proponents of such tools argue that they help software engineers achieve productivity and thus outweigh the downside of occasional problems. In any case, as AI progresses, such tools will inevitably improve.
 
-Many programming languages have been created. My estimate is about 100, if not more. Figure 4 summarises the range of programming languages and their fit in the Web2 architecture. Expecting AI to cover all these languages could be a tall order. How well each language is supported depends on the level of investment by the AI tools provider. What if enterprises that rely on AI-generated code for a given language found that the AI tool it depends on no longer wishes to invest in training the tool for that language? What if the skill to manage the codebase has also atrophied or accumulated technical debt, complicating refactoring? 
+Many programming languages have been created. My estimate is about 100, if not more. Figure 4 summarises the range of programming languages and their fit in the Web2 architecture. Expecting AI to cover all these languages could be a tall order. How well each language is supported depends on the level of investment by the AI tools provider. What if enterprises that rely on AI-generated code for a given language found that the AI tool it depends on no longer wishes to invest in training the tool for that language? What if the skill to manage the codebase has also atrophied or accumulated technical debt, complicating refactoring?
 
 <figure>
 <img src="../assets/img/programming-languages.png" alt="list-crypto" style="width:70%;height:100%">
@@ -113,9 +113,9 @@ Since programming languages are primarily designed for human readability, the sh
 
 Some may argue that software engineers must scrutinise code before deployment to ensure reliability and security, necessitating human involvement. If AI allows engineers to focus on higher-level problem-solving—such as translating business requirements into AI prompts—this could be a more productive shift than having engineers manually write code. But this raises another question: Do we still need to support many programming languages?
 
-Some languages, such as JavaScript, Java, and C#, rely on frameworks (e.g., React, Spring Boot) to abstract complexity and reduce cognitive load. Frameworks were created to relieve coders from having to type boilerplate codes. If AI is meant to generate code, what is the rationale for retaining complex languages and their frameworks? Would it not be more logical for the software engineering profession to standardise on languages with minimal footprints, thereby reducing the complexity AI must handle? As developers shift from writing code to supervising AI-generated solutions. Standardising programming languages would simplify AI training and improve the accuracy of AI-generated code by reducing variability and unnecessary complexity. Without such an effort, AI code generation may ultimately be a short-lived trend rather than a lasting transformation. Otherwise, the investment in training AI to cope with multiple languages may not be commercially viable. 
+Some languages, such as JavaScript, Java, and C#, rely on frameworks (e.g., React, Spring Boot) to abstract complexity and reduce cognitive load. Frameworks were created to relieve coders from having to type boilerplate codes. If AI is meant to generate code, what is the rationale for retaining complex languages and their frameworks? Would it not be more logical for the software engineering profession to standardise on languages with minimal footprints, thereby reducing the complexity AI must handle? As developers shift from writing code to supervising AI-generated solutions. Standardising programming languages would simplify AI training and improve the accuracy of AI-generated code by reducing variability and unnecessary complexity. Without such an effort, AI code generation may ultimately be a short-lived trend rather than a lasting transformation. Otherwise, the investment in training AI to cope with multiple languages may not be commercially viable.
 
-Moreover, if the future of AI-driven development leans toward a prompt-oriented paradigm—particularly, malleable applications—the need for AI-generated code to be compiled into traditional executables seems increasingly redundant. A much more worthwhile investment may be for LLM to tune executable codes for interaction with user interfaces. 
+Moreover, if the future of AI-driven development leans towards a prompt-oriented paradigm—particularly, malleable applications—the need for AI-generated code to be compiled into traditional executables seems increasingly redundant. A much more worthwhile investment may be for LLM to tune executable codes for interaction with user interfaces.
 
 ## Conclusion
 
@@ -129,7 +129,7 @@ If we focus on AI disrupting the software engineering profession, will AI-genera
 
 * A prompt-oriented and malleable application architecture seems the logical endpoint; if so, AI-generated code offers little long-term value.
 
-Will future digital systems be entirely prompt-oriented? 
+Will future digital systems be entirely prompt-oriented?
 
 Given that traditional banking still relies on COBOL, resistance to change suggests Web2 systems will likely coexist with prompt-driven architectures. What this hybrid landscape will look like is uncertain; it could end up with a solution that is not optimal and only creates more problems- e.g. AI-generated code storing up technical debt that could not be undone.
 

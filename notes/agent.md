@@ -1,13 +1,14 @@
 # AI Agents
 
-An AI agent is a software system that combines Large Language Models (LLMs) with external tools to autonomously complete tasks. Unlike standalone LLMs that only generate text, agents can:
+An AI Agent is a system that uses a language model as its reasoning engine to autonomously pursue a goal by taking actions, observing results, and deciding what to do next — in a loop — until the goal is complete.
 
-- Interpret natural language requests
-- Decide which actions to take from a predefined set
-- Execute actions using deterministic tools (APIs, databases, etc.)
-- Coordinate multi-step workflows
+The key word is **autonomously**. A regular LLM interaction is a single turn: you ask, it answers. An agent is different because it can:
 
-**Key distinction:** The LLM acts as an intelligent router that classifies user intent and selects appropriate actions, whilst deterministic code ensures reliable execution.
+**Plan** — break a goal into steps
+**Act** — use tools (search the web, run code, call APIs, read/write files)
+**Observe** — receive the result of that action
+**Reason** — decide what to do next based on the result
+**Repeat** — keep going until done
 
 ## Key Characteristics and Capabilities
 
@@ -183,22 +184,7 @@ Example: Flight booking agent uses LLM to understand "I want to fly to Tokyo" bu
 
 - "Self-driving car" (AI Agent) vs. "autonomous driving capability" (Agentic AI)
 
-## Implementation Framework and Examples
 
-### n8n
-
-`n8n` is a worflow automation platform for building and running agentic system. How it works:
-
-- **Orchestration Layer:** Manages the flow between different AI models and external tools, ensuring steps happen in the right order.
-- **Connects to Everything:** Integrates with hundreds of apps, databases, and APIs, giving agents access to real-world data and actions.
-- **Logic & Control:** Handles conditional logic, retries, and human approvals, making AI less erratic and more reliable.
-- **Visual Development:** Offers a node-based interface (low-code/no-code) to design complex agentic processes without deep programming.
-- **Production Ready:** Provides features like error handling and auditing, crucial for deploying AI agents in business environments.
-
-There is a local docker based `n8n` deployments under `./deployments` consisting of these:
-
-- **[docker-compose.yaml](../deployments/docker/docker-compose.yaml)**: This file defines our n8n environment. We're using the official `n8nio/n8n` image and have set it up to persist all our workflow data into a local `n8n-data` directory. This is crucial so we don't lose our work when the container restarts. It also sources a number of environment variables from the `ops.sh` script to configure things like the host, port, and basic authentication.
-- **[ops.sh](../deployments/docker/ops.sh)**: This is a simple shell script we've put together to handle the common operations. It allows us to `start` and `stop` the n8n container. There's also a `clean` command, but a word of caution: **it will permanently delete all your n8n data**, so use it with care! It's really only there for when we need a completely fresh start.
 
 ## References
 
