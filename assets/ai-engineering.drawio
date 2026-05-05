@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5" pages="5">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5" pages="6">
   <diagram name="Web2" id="qOf2IvuwOSQqknt3VHRZ">
     <mxGraphModel dx="938" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1713,6 +1713,93 @@
         </mxCell>
         <mxCell id="IixoRmf2bzsEruPta0r1-29" value="Too Cold" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="540" y="385" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Pkk-x37WCQ6ZGptgs4gq" name="agent-architecture">
+    <mxGraphModel dx="974" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-8" value="&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Execution Layer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="230" y="560" width="290" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-1" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="340" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-2" value="&lt;b&gt;Agent&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2i5ZwLczKtipq8N3mWEs-3" target="2i5ZwLczKtipq8N3mWEs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-20" value="&lt;font style=&quot;color: rgb(0, 102, 204);&quot;&gt;Task Specification&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2i5ZwLczKtipq8N3mWEs-5">
+          <mxGeometry x="0.14" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-3" value="&lt;b&gt;Perception Layer&lt;/b&gt;&lt;br&gt;&lt;div&gt;[UI, Sensors, etc]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2i5ZwLczKtipq8N3mWEs-4" target="2i5ZwLczKtipq8N3mWEs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-4" value="&lt;b&gt;Orchestration Layer&lt;/b&gt;&lt;div&gt;[stop/retry/budget/human gates]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2i5ZwLczKtipq8N3mWEs-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-6" value="&lt;b&gt;Context Layer&lt;/b&gt;&lt;div&gt;[Goals + History + Memory]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="435" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2i5ZwLczKtipq8N3mWEs-9" target="2i5ZwLczKtipq8N3mWEs-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-9" value="LLM&lt;div&gt;(Reason)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="610" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2i5ZwLczKtipq8N3mWEs-10" target="2i5ZwLczKtipq8N3mWEs-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-10" value="Tool Router&lt;br&gt;&lt;div&gt;(Act)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="610" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2i5ZwLczKtipq8N3mWEs-11" target="2i5ZwLczKtipq8N3mWEs-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="700" />
+              <mxPoint x="510" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-16" value="&lt;font style=&quot;color: rgb(0, 102, 204);&quot;&gt;Observe&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2i5ZwLczKtipq8N3mWEs-15">
+          <mxGeometry x="0.2571" y="4" relative="1" as="geometry">
+            <mxPoint y="64" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-11" value="Tool Results&lt;br&gt;&lt;div&gt;(Observe)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="680" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-17" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[Loop until stopping condition]&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="740" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2i5ZwLczKtipq8N3mWEs-21" target="2i5ZwLczKtipq8N3mWEs-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="424" as="sourcePoint" />
+            <mxPoint x="170" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-22" value="&lt;span style=&quot;font-family: -apple-system, &amp;quot;system-ui&amp;quot;, sans-serif; font-size: 13px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: rgb(0, 102, 204);&quot;&gt;Preferences/&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, &amp;quot;system-ui&amp;quot;, sans-serif; font-size: 13px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: rgb(0, 102, 204);&quot;&gt;Policies/&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -apple-system, &amp;quot;system-ui&amp;quot;, sans-serif; font-size: 13px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: rgb(0, 102, 204);&quot;&gt;Memory&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2i5ZwLczKtipq8N3mWEs-18">
+          <mxGeometry x="-0.3846" relative="1" as="geometry">
+            <mxPoint x="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2i5ZwLczKtipq8N3mWEs-21" value="Human" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="455" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
